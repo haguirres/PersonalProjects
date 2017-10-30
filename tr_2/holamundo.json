@@ -1,0 +1,1971 @@
+[
+  {
+    "Mfal": "B3MAB",
+    "TotalTakeRate": 100.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 2,
+    "WireName": null,
+    "MfalDetail": [
+      {
+        "Mfal": null,
+        "TotalTakeRate": 0.0,
+        "HarnessBaseNumber": "14290-XA",
+        "CircuitCount": 1,
+        "WireName": "CBB79A",
+        "MfalDetail": []
+      },
+      {
+        "Mfal": null,
+        "TotalTakeRate": 0.0,
+        "HarnessBaseNumber": "14290-XA",
+        "CircuitCount": 1,
+        "WireName": "CBB78A",
+        "MfalDetail": []
+      }
+    ]
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "A_GD353-CB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VMM22",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "DMM22",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "SBP18-CA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB26-CA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB25-CA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "GD353-CA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "CBP08-CA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP06-AD",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP20-AC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP06-AD",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP11-AC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP10-AC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP12-AC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP21-AC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP13-AC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP29-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP07-AC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP14-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP15-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP30-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP16-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP17-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP07-AC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "CBP06-CB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "CBP06-CA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "VDN14-CA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB34-CB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A005-XA",
+    "CircuitCount": 1,
+    "WireName": "GD347-CA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A411-XA",
+    "CircuitCount": 1,
+    "WireName": "RRB08-EA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A411-XA",
+    "CircuitCount": 1,
+    "WireName": "CRB08-EA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A411-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB26-EA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A411-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB25-EA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A411-XA",
+    "CircuitCount": 1,
+    "WireName": "GD356-EA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A411-XA",
+    "CircuitCount": 1,
+    "WireName": "VMF04-EE",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A411-XA",
+    "CircuitCount": 1,
+    "WireName": "VMF05-EE",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14A411-XA",
+    "CircuitCount": 1,
+    "WireName": "CDC01-EC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14B079-XA",
+    "CircuitCount": 1,
+    "WireName": "CRT36-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14B079-XA",
+    "CircuitCount": 1,
+    "WireName": "SBP18-BC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14B079-XA",
+    "CircuitCount": 1,
+    "WireName": "GD216-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14B079-XA",
+    "CircuitCount": 1,
+    "WireName": "HYA01-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14B079-XA",
+    "CircuitCount": 1,
+    "WireName": "HYA02-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14B079-XA",
+    "CircuitCount": 1,
+    "WireName": "LYA03-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14B079-XA",
+    "CircuitCount": 1,
+    "WireName": "RYA03-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14B079-XA",
+    "CircuitCount": 1,
+    "WireName": "GD214-BE",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14B079-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB32-BC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14B079-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB33-BC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14B079-XA",
+    "CircuitCount": 1,
+    "WireName": "GD214-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K857-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB32-BD",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K857-XA",
+    "CircuitCount": 1,
+    "WireName": "GD214-BD",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP06-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP06-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP06-AF",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP06-AE",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP06-AG",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP06-AH",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP06-AJ",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP06-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP06-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP06-AF",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP06-AH",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP06-AE",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP06-AG",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP06-AJ",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP20-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP11-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP10-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP12-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP13-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K867-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP21-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP29-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP15-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP14-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP16-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP17-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP30-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP07-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP07-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP07-AE",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP07-AD",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP07-AF",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP07-AG",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP07-AH",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP07-AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP07-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP07-AE",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP07-AD",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP07-AF",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP07-AG",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "15K868-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP07-AH",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB07GD",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB07BD",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB07PD",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB22EP",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CLS21A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CLS21C",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CLS21B",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CLS25A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CLS25C",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CLS25B",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB04AA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CDC55A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CE302EST",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CE302PDB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CE302PD",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "B_GD191PC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CLS07RPB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CLS07RPA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CLS06LPB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CLS06LPA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "GD120L",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "GD120J",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "GD123R",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "SBB93LS",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB25EF",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB25AE",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB25ACM",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB26EF",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB26AE",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB26ACM",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "B_GD123HRN",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "GD125SWS",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "GD125SMW",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "GD125SW",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "GD125MWB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "B_GD120BS",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "SBP24-KA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VMF05-KB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VMF04-KB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "GD120-KBP",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "GD120-KB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB06F",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB07F",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CDC55-K",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "B_GD120PDB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB06GT",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "LMP06-AC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP11-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP10-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP12-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP21-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP13-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VMP20-AB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "RMP06-AC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "SBB36-KA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "B_GD120BC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VDN18A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "SBB01A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB04BC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB05BC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "SBB44A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB32-KA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB33-KA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "LE424-KA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "LE424-KB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "RE456-KA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "RE456-KB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VDC61-KA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VDC61-KB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VE376-KAX",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB34-KA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB09GT",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB08PD",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB08BC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB22-KA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CCB08BC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB13BRM",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CH402A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VE376-KAZ",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CDC64A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB69A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VRW28A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB04F",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB05F",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB50A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "VX107A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CRH04A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB15C",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB15B",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB15A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "B_GD120HRN",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB02A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB32CL",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB33CL",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CRW34MWF",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB16MWF",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "SBB91TTM",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB71A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "GD120EF",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14301-XA",
+    "CircuitCount": 1,
+    "WireName": "GD109GAA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "A_GD353-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VMM22",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "DMM22",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VMM22-A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "DMM22-A",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB31-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB32-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "SBP11-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB04-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB05-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB06-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB07-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB25-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB26-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB29-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB30-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB31-BAA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB32-BAA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "CDC01-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "GD356-EC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VMF05-BC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VMF04-BC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "SBP22-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "SBP24-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "GD214-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "GD215-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "SBP18-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "CRT36-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "HYA01-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "HYA02-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "LYA03-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "RYA03-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "CBP06-BC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VDN14-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "GD215-BAA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "SBB36-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "GD216-BC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB32-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB33-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "GD284-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "GD284-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "GD284-BC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB85-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB84-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB83-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "GD239-BA",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "SBF03-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB25-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "VDB26-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB22-BB",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "GD214-BF",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Standard",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14401-XA",
+    "CircuitCount": 1,
+    "WireName": "GD214-BC",
+    "MfalDetail": []
+  },
+  {
+    "Mfal": "Boolean",
+    "TotalTakeRate": 0.0,
+    "HarnessBaseNumber": "14290-XA",
+    "CircuitCount": 1,
+    "WireName": "CBB79A",
+    "MfalDetail": []
+  }
+]

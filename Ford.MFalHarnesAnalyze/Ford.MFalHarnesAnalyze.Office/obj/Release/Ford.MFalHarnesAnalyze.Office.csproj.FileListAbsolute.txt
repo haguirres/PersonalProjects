@@ -1,0 +1,7 @@
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.Office\bin\Release\Ford.MFalHarnesAnalyze.Office.dll
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.Office\bin\Release\Ford.MFalHarnesAnalyze.Office.pdb
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.Office\bin\Release\Ford.MFalHarnesAnalyze.Model.dll
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.Office\bin\Release\Ford.MFalHarnesAnalyze.Model.pdb
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.Office\obj\Release\Ford.MFalHarnesAnalyze.Office.csprojResolveAssemblyReference.cache
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.Office\obj\Release\Ford.MFalHarnesAnalyze.Office.dll
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.Office\obj\Release\Ford.MFalHarnesAnalyze.Office.pdb

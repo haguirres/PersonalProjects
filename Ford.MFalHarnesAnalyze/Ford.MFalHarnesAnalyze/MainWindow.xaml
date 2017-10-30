@@ -1,0 +1,292 @@
+﻿<Window x:Class="Ford.MFalHarnesAnalyze.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ford.MFalHarnesAnalyze"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:usercontrols ="clr-namespace:Ford.MFalHarnesAnalyze.Controls"
+        xmlns:vm="clr-namespace:Ford.MFalHarnesAnalyze.ViewModel;assembly=Ford.MFalHarnesAnalyze.ViewModel"
+        xmlns:viws="clr-namespace:Ford.MFalHarnesAnalyze.Controls"
+        mc:Ignorable="d"
+        Title="Ford MFal Harnes Analyze" Height="550" Width="712">
+    <Window.DataContext>
+        <vm:MainWindowViewModel x:Name="MainVM"></vm:MainWindowViewModel>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="New"></MenuItem>
+            <MenuItem Header="Load" Command="{Binding LoadJSON}"></MenuItem>
+            <MenuItem Header="Save">
+                <MenuItem Header="Save" Command="{Binding SaveCommand}"></MenuItem>
+                <MenuItem Header="Save As" Command="{Binding SaveAsCommand}"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Clean">
+                <MenuItem Header="Clean Composite" Command="{Binding CleanCompositeCommand}"></MenuItem>
+                <MenuItem Header="Clean Harness" Command="{Binding CleanHarnessCommand}"></MenuItem>
+                <MenuItem Header="Clean All" Command="{Binding CleanCommand}"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <!--<Grid Grid.Row="1" Margin="7">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label>File Name:</Label>
+            <TextBox Grid.Column="1" Text="" />
+        </Grid>-->
+        <Grid Grid.Row="1" Margin="7">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto " />
+                <RowDefinition Height="Auto " />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" HorizontalAlignment="Stretch" Margin="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Label>TRIM:</Label>
+                <TextBox Grid.Column="1" Text="{Binding TrimFileName,Mode=TwoWay}"></TextBox>
+                <Button Grid.Column="2" Command="{Binding LoadTrimCommand}">
+                    <StackPanel>
+                        <Image Source="./Icons/folder-open-icon.png"></Image>
+                    </StackPanel>
+                </Button>
+            </Grid>
+
+            <Grid Grid.Column="1" HorizontalAlignment="Stretch" Margin="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0">WireList:</Label>
+                <TextBox Grid.Column="1" Text="{Binding WirelistFileName,Mode=TwoWay}"></TextBox>
+                <Button Grid.Column="2" Command="{Binding LoadWirelistCommand}">
+                    <StackPanel>
+                        <Image Source="./Icons/folder-open-icon.png"></Image>
+                    </StackPanel>
+                </Button>
+            </Grid>
+
+            <Grid Grid.Column="2" HorizontalAlignment="Stretch" Margin="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0">Composite:</Label>
+                <ComboBox Grid.Column="1" ItemsSource="{Binding CompositeList , Mode=TwoWay}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <CheckBox Content="{Binding Path=CompositeCode}" IsChecked="{Binding Path=IsSelected,Mode=TwoWay}" />
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </Grid>
+        </Grid>
+        <TabControl Grid.Row="4">
+            <TabItem Header="MFAL">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.ColumnSpan="2" Margin="0,0,0.333,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0">Region:</Label>
+                        <TextBox Grid.Column="1" Text="{Binding RegionName,Mode=TwoWay}"></TextBox>
+                        <Button Grid.Row="2" Grid.ColumnSpan="3" Margin="3" HorizontalAlignment="Right" Command="{Binding CalculateCommand}">Calculate</Button>
+                    </Grid>
+                    <DataGrid Grid.Row="1" Margin="5,3,1.333,2.667" ItemsSource="{Binding CalculationList}" AutoGenerateColumns="False"
+                              RowDetailsVisibilityMode="VisibleWhenSelected" RowDetailsVisibilityChanged="DataGrid_RowDetailsVisibilityChanged"
+                              IsReadOnly="True" Grid.ColumnSpan="2">
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button  Margin="3" Click="ShowHideDetails">Details</Button>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Header="MFal" Binding="{Binding Mfal}" Width="Auto"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Take Rate" Binding="{Binding TotalTakeRate}" Width="Auto"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Harness" Binding="{Binding HarnessBaseNumber}" Width="*"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Circuit Counter" Binding="{Binding CircuitCount}" Width="Auto"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Wire Name" Binding="{Binding WireName}" Width="*"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                        <DataGrid.RowDetailsTemplate>
+                            <DataTemplate>
+                                <DataGrid ItemsSource="{Binding MfalDetail}" AutoGenerateColumns="False"
+                                          Background="Beige" Visibility="{Binding HiddenDetail}" IsReadOnly="True">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="MFal" Binding="{Binding Mfal}" Width="Auto"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="Harness" Binding="{Binding HarnessBaseNumber}" Width="Auto"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="Circuit Counter" Binding="{Binding CircuitCount}" Width="Auto"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="Wire Name" Binding="{Binding WireName}" Width="Auto"></DataGridTextColumn>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </DataTemplate>
+                        </DataGrid.RowDetailsTemplate>
+                    </DataGrid>
+                    <Grid Grid.Row="2" Grid.ColumnSpan="2" Margin="0,0.333,0.333,-0.333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Visibility="Hidden">File Name:</Label>
+                        <TextBox Grid.Column="1" Visibility="Hidden" Text="{Binding FileName,Mode=TwoWay}"></TextBox>
+                        <Button Grid.Column="2" HorizontalAlignment="Right" Margin="3" Command="{Binding ExportCommand}">Export to Excel</Button>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Harness">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0">Region:</Label>
+                        <TextBox Grid.Column="1" Text="{Binding RegionName,Mode=TwoWay}" VerticalAlignment="Center"></TextBox>
+                        <Label Grid.Column="2">Harness:</Label>
+                        <ComboBox Grid.Column="3" ItemsSource="{Binding HarnessList , Mode=TwoWay}">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <CheckBox Content="{Binding Path=HarnessBaseNumber}" IsChecked="{Binding Path=IsSelected,Mode=TwoWay}" />
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                        <Button Grid.Row="2" Grid.Column="4" Margin="3" HorizontalAlignment="Right" Click="Button_Click">Calculate</Button>
+                    </Grid>
+                    <DataGrid Grid.Row="1" Margin="3" ItemsSource="{Binding CalculationByHarnessList}"
+                              AutoGenerateColumns="False" RowDetailsVisibilityMode="VisibleWhenSelected"
+                              RowDetailsVisibilityChanged="DataGrid_RowDetailsVisibilityChanged"
+                              IsReadOnly="True">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Harness" Binding="{Binding HarnessBaseNumber}" Width="*"></DataGridTextColumn>
+                            <DataGridTextColumn Header="MFal" Binding="{Binding Mfal}" Width="Auto"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Take Rate" Binding="{Binding TotalTakeRate}" Width="Auto"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Circuit Counter" Binding="{Binding CircuitCount}" Width="Auto"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Wire Name" Binding="{Binding WireName}" Width="*"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                        <DataGrid.RowDetailsTemplate>
+                            <DataTemplate>
+                                <DataGrid ItemsSource="{Binding MfalDetail}" AutoGenerateColumns="False"
+                                          Background="Beige" IsReadOnly="True">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="MFal" Binding="{Binding Mfal}" Width="Auto"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="Harness" Binding="{Binding HarnessBaseNumber}" Width="Auto"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="Circuit Counter" Binding="{Binding CircuitCount}" Width="Auto"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="Wire Name" Binding="{Binding WireName}" Width="Auto"></DataGridTextColumn>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </DataTemplate>
+                        </DataGrid.RowDetailsTemplate>
+                    </DataGrid>
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Visibility="Hidden">File Name:</Label>
+                        <TextBox Grid.Column="1" Visibility="Hidden" Text="{Binding FileName,Mode=TwoWay}"></TextBox>
+                        <Button Grid.Column="2" HorizontalAlignment="Right" Margin="3" Command="{Binding ExportHarnessCommand}">Export to Excel</Button>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Level">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="2">DataSet:</Label>
+                        <TextBox Grid.Column="3" Text="{Binding DataSetFileName,Mode=TwoWay}" VerticalContentAlignment="Center"></TextBox>
+                        <Button Grid.Column="4" Command="{Binding LoadDataSetCommand}">
+                            <StackPanel>
+                                <Image Source="./Icons/folder-open-icon.png"></Image>
+                            </StackPanel>
+                        </Button>
+                        <Label Grid.Column="5">Harness:</Label>
+                        <ComboBox Grid.Column="6" ItemsSource="{Binding HarnessLevelList , Mode=TwoWay}">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <CheckBox Content="{Binding Path=HarnessBaseNumber}" IsChecked="{Binding Path=IsSelected,Mode=TwoWay}" />
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                        <Button Grid.Row="2" Grid.Column="7" Margin="3" HorizontalAlignment="Right" Command="{Binding ValidateDataSetCommand}">Validate</Button>
+                    </Grid>
+                    <DataGrid Grid.Row="1" Margin="3" ItemsSource="{Binding CalculationToLevelList}"
+                              AutoGenerateColumns="False" RowDetailsVisibilityMode="VisibleWhenSelected"
+                              RowDetailsVisibilityChanged="DataGrid_RowDetailsVisibilityChanged"
+                              IsReadOnly="True">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="MFal" Binding="{Binding Mfal}" Width="*"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Take Rate" Binding="{Binding TotalTakeRate}" Width="*"></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Grid Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Visibility="Hidden">File Name:</Label>
+                        <TextBox Grid.Column="1" Visibility="Hidden" Text="{Binding FileName,Mode=TwoWay}"></TextBox>
+                        <!--<Button Grid.Column="2" HorizontalAlignment="Right" Margin="3" Command="{Binding SaveDataSetFileCommand}" IsEnabled="{Binding EnableSaveDataset}">Save DataSet</Button>-->
+                        <Button Grid.Column="2" HorizontalAlignment="Right" Margin="3" Command="{Binding SaveDataSetFileCommand}">Save DataSet</Button>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Car" IsEnabled="False"></TabItem>
+        </TabControl>
+    </Grid>
+</Window>

@@ -1,0 +1,37 @@
+***   Wiring giveaway optimizer data file  ***
+**     DO "NOT" MANUALLY EDIT THIS FILE!    **
+**********************************************
+1.14.7.0
+14B599 CHD 2017 08 34,-1
+0,0
+2,0
+DR  A,DR  E,DR  F,JEAAA
+-,-,-,-
+-,-,-,-
+-,-,-,-
+-,-,-,-
+0,100,0,0
+0.0,0.0,0.0,0.0
+2 WHL L/H FRONT DRIVE
+4 WHL L/H PART TIME DRIVE
+4 WHL L/H FULL TIME DRIVE
+LESS HEADLAMP LEVELING
+0
+-1
+-1
+-1
+$
+0.0005
+0,1
+HD
+0
+-1
+-1
+0,0
+LX6T,14B599,0000000000000000
+CHD BuildabilityReport_561168_20170824145607.xlsx CHD-CX430N C-SUV 2020 C430N (CHD) Production-PUBLISHED FMEJIA5 2017-08-24 14:56:08.843
+2
+DR  A,JEAAA
+DR  E,JEAAA
+DR  F,JEAAA
+End

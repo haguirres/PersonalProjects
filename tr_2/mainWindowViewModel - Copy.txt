@@ -1,0 +1,463 @@
+using CsvHelper;
+using Ford.MFalHarnesAnalyze.Model;
+using Ford.MFalHarnesAnalyze.Office;
+using Ford.MFalHarnesAnalyze.ViewModel.Commands;
+using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Data;
+using System.IO;
+using System.Linq;
+using System.Windows.Forms;
+
+namespace Ford.MFalHarnesAnalyze.ViewModel
+{
+    public class MainWindowViewModel : INotifyPropertyChanged
+    {
+        private AnalyzeModel model;
+
+        private const string filterJSON = "JSON Files | *.json";
+        private const string filterCSV = "Comma-Separated Values | *.csv";
+
+        private string trimFileName;
+        private string wirelistFileName;
+        private string regionName;
+        private string fileName;
+        private TakeRate takeRate;
+        private List<Wirelist> wirelist;
+        private List<Composite> compositeList;
+        private ObservableCollection<AnalyzeCalculation> calculationList;
+
+        public string TrimFileName
+        {
+            get
+            {
+                return trimFileName;
+            }
+
+            set
+            {
+                this.trimFileName = value;
+                this.OnPropertyChanged("TrimFileName");
+            }
+        }
+
+        public List<Composite> CompositeList
+        {
+            get
+            {
+                return compositeList;
+            }
+
+            set
+            {
+                this.compositeList = value;
+                OnPropertyChanged("CompositeList");
+            }
+        }
+
+        public ObservableCollection<AnalyzeCalculation> CalculationList
+        {
+            get
+            {
+                return calculationList;
+            }
+
+            set
+            {
+                this.calculationList = value;
+                OnPropertyChanged("CalculationList");
+            }
+        }
+
+        public string WirelistFileName
+        {
+            get
+            {
+                return wirelistFileName;
+            }
+
+            set
+            {
+                this.wirelistFileName = value;
+                OnPropertyChanged("WirelistFileName");
+            }
+        }
+
+        public MainWindowViewModel()
+        {
+            model = new AnalyzeModel();
+            LoadTrimCommand = new SimpleCommand(LoadTrim);
+            LoadWirelistCommand = new SimpleCommand(LoadWirelist);
+            CalculateCommand = new SimpleCommand(Calculate);
+            ExportCommand = new SimpleCommand(ExportToExcel);
+            SaveCommand = new SimpleCommand(Save);
+            LoadJSON = new SimpleCommand(LoadJson);
+            CompositeList = new List<Composite>();
+            wirelist = new List<Wirelist>();
+            CalculationList = new ObservableCollection<AnalyzeCalculation>();
+        }
+
+        #region Commands
+
+        public SimpleCommand LoadTrimCommand { get; private set; }
+        public SimpleCommand LoadWirelistCommand { get; private set; }
+        public SimpleCommand CalculateCommand { get; private set; }
+        public SimpleCommand ExportCommand { get; private set; }
+        public SimpleCommand LoadJSON { get; private set; }
+        public SimpleCommand SaveCommand { get; private set; }
+
+        public string RegionName
+        {
+            get
+            {
+                return regionName;
+            }
+
+            set
+            {
+                this.regionName = value;
+                OnPropertyChanged("RegionName");
+            }
+        }
+
+        public string FileName
+        {
+            get
+            {
+                return fileName;
+            }
+
+            set
+            {
+                this.fileName = value;
+                OnPropertyChanged("FileName");
+            }
+        }
+
+        #endregion Commands
+
+        #region Private Methods
+
+        private void LoadTrim()
+        {
+            string[] fileNames = OpenDialogFiles(filterJSON);
+            try
+            {
+                TrimFileName = fileNames[0];
+                takeRate = ReadTrimFiles(fileNames);
+            }
+            catch (System.Exception)
+            {
+                System.Windows.Forms.MessageBox.Show("There was a problem reading the file, ensure it has the correct format and try angain.", "File loading", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void LoadWirelist()
+        {
+            string[] fileNames = OpenDialogFiles(filterCSV);
+            try
+            {
+                WirelistFileName = fileNames[0];
+                wirelist = ReadWirelist(WirelistFileName);
+                CompositeList = GetCompositeList(wirelist);
+            }
+            catch (System.Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show("There was a problem reading the file, ensure it has the correct format and try angain.", "File loading", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Calculate()
+        {
+            CalculationList.Clear();
+            var compositeSelected = compositeList.Where(p => p.IsSelected).ToList();
+            CalculateByMFal(takeRate, wirelist, compositeSelected);
+            CalculateStandard(wirelist, compositeSelected.ToList());
+            CalculateBoolean(takeRate, wirelist, compositeSelected);
+        }
+
+        private void CalculateByMFal(TakeRate takeRate, List<Wirelist> wirelist, List<Composite> compositeList)
+        {
+            foreach (var feature in takeRate.Features)
+            {
+                var mfals = wirelist.Where(s => s.OptionTextDisplay == feature.MFAL).GroupBy(p => p.HarnessBaseNumber).Select(group => new
+                {
+                    Harnes = group.Key,
+                    Count = group.Count()
+                });
+                if (mfals.Count() > 0)
+                {
+                    foreach (var item in mfals)
+                    {
+                        List<AnalyzeCalculation> temp = new List<AnalyzeCalculation>();
+                        var data = wirelist
+                            .Where(s => s.OptionTextDisplay == feature.MFAL && s.HarnessBaseNumber == item.Harnes)
+                            .GroupBy(s => s.ConductorWirename).Select(group => new
+                            {
+                                WireName = group.Key,
+                                Count = group.Count()
+                            });
+                        foreach (var wire in data)
+                        {
+                            temp.Add(new AnalyzeCalculation() { WireName = wire.WireName, CircuitCount = wire.Count, HarnessBaseNumber = item.Harnes });
+                        }
+
+                        CalculationList.Add(new AnalyzeCalculation()
+                        {
+                            CircuitCount = item.Count,
+                            Mfal = feature.MFAL,
+                            TotalTakeRate = feature.TotalTakeRate,
+                            HarnessBaseNumber = item.Harnes,
+                            MfalDetail = temp
+                        });
+                    }
+                }
+            }
+        }
+
+        private void CalculateStandard(List<Wirelist> wirelist, List<Composite> compositeList)
+        {
+            foreach (var item in compositeList)
+            {
+                var data = wirelist.Where(s => string.IsNullOrEmpty(s.OptionTextDisplay) && s.CompositeElement.CompositeCode == item.CompositeCode).ToList();
+                foreach (var harnes in data)
+                {
+                    CalculationList.Add(new AnalyzeCalculation
+                    {
+                        Mfal = "Standard",
+                        CircuitCount = 1,
+                        HarnessBaseNumber = harnes.HarnessBaseNumber,
+                        WireName = harnes.ConductorWirename
+                    });
+                }
+            }
+        }
+
+        private void CalculateBoolean(TakeRate takeRate, List<Wirelist> wirelist, List<Composite> compositeList)
+        {
+            var wirelistWithOperator = wirelist.Where(s => s.OptionTextDisplay.Contains("|") || s.OptionTextDisplay.Contains("&")).ToList();
+
+            foreach (var feature in takeRate.Features)
+            {
+                foreach (var item in wirelistWithOperator)
+                {
+                    if (item.OptionTextDisplay.Contains(feature.MFAL))
+                    {
+                        item.OptionTextDisplay = item.OptionTextDisplay.Replace(feature.MFAL, "true").Replace("|", "or").Replace("&", "and");
+                    }
+                }
+            }
+
+            var wirelistWithBoolean = wirelistWithOperator.Where(s => s.OptionTextDisplay.Contains("true"));
+            foreach (var wire in wirelistWithBoolean)
+            {
+                if (wire.OptionTextDisplay.Any(c => char.IsUpper(c)))
+                {
+                    var strings = wire.OptionTextDisplay.Split(' ');
+
+                    foreach (var item in strings)
+                    {
+                        string replaceMfal = string.Empty;
+                        foreach (char letter in item)
+                        {
+                            if (char.IsUpper(letter) || letter == '_')
+                            {
+                                replaceMfal += letter;
+                            }
+                        }
+                        if (!string.IsNullOrEmpty(replaceMfal))
+                        {
+                            wire.OptionTextDisplay = wire.OptionTextDisplay.Replace(replaceMfal, "false");
+                        }
+                    }
+                }
+                DataTable dt = new DataTable();
+                dt.Columns.Add("", typeof(bool));
+                dt.Columns[0].Expression = wire.OptionTextDisplay;
+
+                DataRow dr = dt.NewRow();
+                dt.Rows.Add(dr);
+                var result = (Boolean)dr[0];
+                if (result)
+                {
+                    CalculationList.Add(new AnalyzeCalculation
+                    {
+                        Mfal = "Boolean",
+                        CircuitCount = 1,
+                        HarnessBaseNumber = wire.HarnessBaseNumber,
+                        WireName = wire.ConductorWirename
+                    });
+                }
+            }
+        }
+
+        private void ExportToExcel()
+        {
+            ExcelHelper.GenerateExcelReport(CalculationList.ToList(), RegionName);
+        }
+
+        private void LoadJson()
+        {
+            string[] fileNames = OpenDialogFiles(filterJSON, false);
+            ReadJsonFiles(fileNames);
+        }
+
+        private void Save()
+        {
+            model.CalculationList = CalculationList;
+            model.CompositeList = CompositeList;
+            model.FileName = FileName;
+            model.RegionName = RegionName;
+            model.takeRate = takeRate;
+            model.TrimFileName = TrimFileName;
+            model.wirelist = wirelist;
+            model.WirelistFileName = WirelistFileName;
+            var fileDialog = new SaveFileDialog()
+            {
+                Filter = "JSON files|*.json"
+            };
+
+            if (fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                this.FileName = fileDialog.FileName;
+
+                using (var file = File.Open(FileName, FileMode.Create))
+                {
+                    using (var writter = new StreamWriter(file))
+                    {
+                        writter.Write(JsonConvert.SerializeObject(model));
+                    }
+                }
+            }
+        }
+
+        private List<Composite> GetCompositeList(List<Wirelist> wirelist)
+        {
+            List<Composite> compositeList = new List<Composite>();
+
+            var compositeListTemp = wirelist.Where(s => !string.IsNullOrEmpty(s.CompositeElement.CompositeCode)).Select(p => p.CompositeElement.CompositeCode).Distinct().OrderBy(p => p).ToList();
+            compositeListTemp.ForEach(item => compositeList.Add(new Composite { CompositeCode = item, IsSelected = false }));
+
+            return compositeList;
+        }
+
+        private TakeRate ReadTrimFiles(string[] fileNames)
+        {
+            TakeRate takeRate = new TakeRate();
+
+            foreach (var fileName in fileNames)
+            {
+                using (var file = File.Open(fileName, FileMode.Open))
+                {
+                    using (var reader = new StreamReader(file))
+                    {
+                        var helperTakeRate = JsonConvert.DeserializeObject<TakeRate>(reader.ReadToEnd());
+                        takeRate.Features.AddRange(helperTakeRate.Features);
+                        takeRate.Freestandings.AddRange(helperTakeRate.Freestandings);
+                        takeRate.Packages.AddRange(helperTakeRate.Packages);
+                        takeRate.Series.AddRange(helperTakeRate.Series);
+                    }
+                }
+            }
+            return takeRate;
+        }
+
+        private List<Wirelist> ReadWirelist(string wirelistFile)
+        {
+            List<Wirelist> lista = new List<Wirelist>();
+            using (TextReader file = File.OpenText(wirelistFile))
+            {
+                var csv = new CsvReader(file);
+
+                while (csv.Read())
+                {
+                    var harnes = csv.GetField<string>("Harness Base Number");
+                    if (!string.IsNullOrEmpty(harnes))
+                    {
+                        var arrayHarnes = harnes.Split('-');
+                        var composite = arrayHarnes.Count() > 1 ? arrayHarnes[1] : string.Empty;
+                        var conductor = csv.GetField<string>("Conductor/Wire name");
+                        var optionTextDisplay = csv.GetField<string>("Option Text Display");
+                        Wirelist item = new Wirelist()
+                        {
+                            HarnessBaseNumber = harnes,
+                            ConductorWirename = conductor,
+                            OptionTextDisplay = optionTextDisplay,
+                            CompositeElement = new Composite { CompositeCode = composite, IsSelected = false }
+                        };
+
+                        lista.Add(item);
+                    }
+                }
+            }
+
+            return lista;
+        }
+
+        private void ReadJsonFiles(string[] fileNames)
+        {
+            AnalyzeModel model = new AnalyzeModel();
+
+            foreach (var fileName in fileNames)
+            {
+                using (var file = File.Open(fileName, FileMode.Open))
+                {
+                    using (var reader = new StreamReader(file))
+                    {
+                        var helperAnalyzeModel = JsonConvert.DeserializeObject<AnalyzeModel>(reader.ReadToEnd());
+                        TrimFileName = helperAnalyzeModel.TrimFileName;
+                        WirelistFileName = helperAnalyzeModel.WirelistFileName;
+                        RegionName = helperAnalyzeModel.RegionName;
+                        FileName = helperAnalyzeModel.FileName;
+                        CompositeList = helperAnalyzeModel.CompositeList;
+                        takeRate = helperAnalyzeModel.takeRate;
+                        wirelist = helperAnalyzeModel.wirelist;
+                        CalculationList = helperAnalyzeModel.CalculationList;
+                    }
+                }
+            }
+        }
+
+        private string[] OpenDialogFiles(string filter, bool multiselect = false)
+        {
+            string[] fileNamesArray = null;
+
+            OpenFileDialog dialog = new OpenFileDialog() { Filter = filter, Multiselect = multiselect };
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                if (multiselect)
+                {
+                    fileNamesArray = dialog.FileNames;
+                    TrimFileName = fileNamesArray[0] ?? "";
+                }
+                else
+                {
+                    fileNamesArray = new string[] { dialog.FileName };
+                    TrimFileName = dialog.FileName;
+                }
+            }
+
+            return fileNamesArray;
+        }
+
+        #endregion Private Methods
+
+        #region INotifyPropertyChanged
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChangedEventHandler handled = PropertyChanged;
+            if (handled != null)
+            {
+                handled(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        #endregion INotifyPropertyChanged
+    }
+}

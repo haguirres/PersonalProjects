@@ -1,0 +1,451 @@
+{
+    "Name": "Prueba",
+    "Series": [
+        {
+            "Name": "Serie uno",
+            "TakeRate": 25,
+            "IsRelated": false
+        },
+        {
+            "Name": "Serie dos",
+            "TakeRate": 25,
+            "IsRelated": false
+        },
+        {
+            "Name": "Serie tres",
+            "TakeRate": 25,
+            "IsRelated": false
+        },
+        {
+            "Name": "Serie cuatro",
+            "TakeRate": 25,
+            "IsRelated": false
+        }
+    ],
+    "Packages": [
+        {
+            "Name": "Paquete 1",
+            "TakeRate": 15,
+            "IsRelated": false
+        },
+        {
+            "Name": "Paquete 2",
+            "TakeRate": 15,
+            "IsRelated": false
+        }
+    ],
+    "Freestandings": [
+        {
+            "Name": "Nav",
+            "TakeRate": 5,
+            "IsRelated": false
+        },
+        {
+            "Name": "Speakers",
+            "TakeRate": 7,
+            "IsRelated": false
+        }
+    ],
+    "Features": [
+        {
+            "MFAL": "A2EAM",
+            "Series": [
+                {
+                    "Name": "Serie uno",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Serie dos",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Serie tres",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Serie cuatro",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                }
+            ],
+            "Packages": [
+                {
+                    "Name": "Paquete 1",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Paquete 2",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                }
+            ],
+            "Freestandings": [
+                {
+                    "Name": "Nav",
+                    "TakeRate": 5,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Speakers",
+                    "TakeRate": 7,
+                    "IsRelated": false
+                }
+            ],
+            "TotalTakeRate": 100
+        },
+        {
+            "MFAL": "AC--C",
+            "Series": [
+                {
+                    "Name": "Serie uno",
+                    "TakeRate": 25,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Serie dos",
+                    "TakeRate": 25,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Serie tres",
+                    "TakeRate": 25,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Serie cuatro",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                }
+            ],
+            "Packages": [
+                {
+                    "Name": "Paquete 1",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Paquete 2",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                }
+            ],
+            "Freestandings": [
+                {
+                    "Name": "Nav",
+                    "TakeRate": 5,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Speakers",
+                    "TakeRate": 7,
+                    "IsRelated": false
+                }
+            ],
+            "TotalTakeRate": 25
+        },
+        {
+            "MFAL": "AC--G",
+            "Series": [
+                {
+                    "Name": "Serie uno",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Serie dos",
+                    "TakeRate": 25,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Serie tres",
+                    "TakeRate": 25,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Serie cuatro",
+                    "TakeRate": 25,
+                    "IsRelated": false
+                }
+            ],
+            "Packages": [
+                {
+                    "Name": "Paquete 1",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Paquete 2",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                }
+            ],
+            "Freestandings": [
+                {
+                    "Name": "Nav",
+                    "TakeRate": 5,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Speakers",
+                    "TakeRate": 7,
+                    "IsRelated": false
+                }
+            ],
+            "TotalTakeRate": 25
+        },
+        {
+            "MFAL": "AC--S",
+            "Series": [
+                {
+                    "Name": "Serie uno",
+                    "TakeRate": 25,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Serie dos",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Serie tres",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Serie cuatro",
+                    "TakeRate": 25,
+                    "IsRelated": false
+                }
+            ],
+            "Packages": [
+                {
+                    "Name": "Paquete 1",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Paquete 2",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                }
+            ],
+            "Freestandings": [
+                {
+                    "Name": "Nav",
+                    "TakeRate": 5,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Speakers",
+                    "TakeRate": 7,
+                    "IsRelated": false
+                }
+            ],
+            "TotalTakeRate": 50
+        },
+        {
+            "MFAL": "ACYAA",
+            "Series": [
+                {
+                    "Name": "Serie uno",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Serie dos",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Serie tres",
+                    "TakeRate": 25,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Serie cuatro",
+                    "TakeRate": 25,
+                    "IsRelated": false
+                }
+            ],
+            "Packages": [
+                {
+                    "Name": "Paquete 1",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Paquete 2",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                }
+            ],
+            "Freestandings": [
+                {
+                    "Name": "Nav",
+                    "TakeRate": 5,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Speakers",
+                    "TakeRate": 7,
+                    "IsRelated": false
+                }
+            ],
+            "TotalTakeRate": 50
+        },
+        {
+            "MFAL": "ACYAB",
+            "Series": [
+                {
+                    "Name": "Serie uno",
+                    "TakeRate": 25,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Serie dos",
+                    "TakeRate": 25,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Serie tres",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Serie cuatro",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                }
+            ],
+            "Packages": [
+                {
+                    "Name": "Paquete 1",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Paquete 2",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                }
+            ],
+            "Freestandings": [
+                {
+                    "Name": "Nav",
+                    "TakeRate": 5,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Speakers",
+                    "TakeRate": 7,
+                    "IsRelated": false
+                }
+            ],
+            "TotalTakeRate": 50
+        },
+        {
+            "MFAL": "B3MAB",
+            "Series": [
+                {
+                    "Name": "Serie uno",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Serie dos",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Serie tres",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Serie cuatro",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                }
+            ],
+            "Packages": [
+                {
+                    "Name": "Paquete 1",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Paquete 2",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                }
+            ],
+            "Freestandings": [
+                {
+                    "Name": "Nav",
+                    "TakeRate": 5,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Speakers",
+                    "TakeRate": 7,
+                    "IsRelated": false
+                }
+            ],
+            "TotalTakeRate": 100
+        },
+        {
+            "MFAL": "BEXAB",
+            "Series": [
+                {
+                    "Name": "Serie uno",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Serie dos",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Serie tres",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Serie cuatro",
+                    "TakeRate": 25,
+                    "IsRelated": true
+                }
+            ],
+            "Packages": [
+                {
+                    "Name": "Paquete 1",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Paquete 2",
+                    "TakeRate": 15,
+                    "IsRelated": false
+                }
+            ],
+            "Freestandings": [
+                {
+                    "Name": "Nav",
+                    "TakeRate": 5,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Speakers",
+                    "TakeRate": 7,
+                    "IsRelated": false
+                }
+            ],
+            "TotalTakeRate": 100
+        }
+    ]
+}

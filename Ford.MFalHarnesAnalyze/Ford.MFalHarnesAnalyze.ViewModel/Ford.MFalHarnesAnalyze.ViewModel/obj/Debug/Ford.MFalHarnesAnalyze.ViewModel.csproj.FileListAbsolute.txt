@@ -1,0 +1,13 @@
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.ViewModel\Ford.MFalHarnesAnalyze.ViewModel\bin\Debug\Ford.MFalHarnesAnalyze.ViewModel.dll
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.ViewModel\Ford.MFalHarnesAnalyze.ViewModel\bin\Debug\Ford.MFalHarnesAnalyze.ViewModel.pdb
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.ViewModel\Ford.MFalHarnesAnalyze.ViewModel\bin\Debug\Ford.MFalHarnesAnalyze.Model.dll
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.ViewModel\Ford.MFalHarnesAnalyze.ViewModel\bin\Debug\Newtonsoft.Json.dll
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.ViewModel\Ford.MFalHarnesAnalyze.ViewModel\bin\Debug\Ford.MFalHarnesAnalyze.Model.pdb
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.ViewModel\Ford.MFalHarnesAnalyze.ViewModel\bin\Debug\Newtonsoft.Json.xml
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.ViewModel\Ford.MFalHarnesAnalyze.ViewModel\obj\Debug\Ford.MFalHarnesAnalyze.ViewModel.csprojResolveAssemblyReference.cache
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.ViewModel\Ford.MFalHarnesAnalyze.ViewModel\obj\Debug\Ford.MFalHarnesAnalyze.ViewModel.dll
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.ViewModel\Ford.MFalHarnesAnalyze.ViewModel\obj\Debug\Ford.MFalHarnesAnalyze.ViewModel.pdb
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.ViewModel\Ford.MFalHarnesAnalyze.ViewModel\bin\Debug\CsvHelper.dll
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.ViewModel\Ford.MFalHarnesAnalyze.ViewModel\bin\Debug\CsvHelper.xml
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.ViewModel\Ford.MFalHarnesAnalyze.ViewModel\bin\Debug\Ford.MFalHarnesAnalyze.Office.dll
+C:\Personal Projects\Ford.MFalHarnesAnalyze\Ford.MFalHarnesAnalyze.ViewModel\Ford.MFalHarnesAnalyze.ViewModel\bin\Debug\Ford.MFalHarnesAnalyze.Office.pdb

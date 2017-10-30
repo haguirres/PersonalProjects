@@ -1,0 +1,166 @@
+{
+    "Name": null,
+    "Series": [
+        {
+            "Name": "Clase 1",
+            "TakeRate": 10,
+            "IsRelated": false
+        },
+        {
+            "Name": "Clase 2",
+            "TakeRate": 10,
+            "IsRelated": false
+        },
+        {
+            "Name": "Clase 3",
+            "TakeRate": 10,
+            "IsRelated": false
+        },
+        {
+            "Name": "Clase 4",
+            "TakeRate": 30,
+            "IsRelated": false
+        },
+        {
+            "Name": "Clase 5",
+            "TakeRate": 40,
+            "IsRelated": false
+        }
+    ],
+    "Packages": [],
+    "Freestandings": [],
+    "Features": [
+        {
+            "MFAL": "DR--A",
+            "Series": [
+                {
+                    "Name": "Clase 1",
+                    "TakeRate": 10,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Clase 2",
+                    "TakeRate": 10,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Clase 3",
+                    "TakeRate": 10,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Clase 4",
+                    "TakeRate": 30,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Clase 5",
+                    "TakeRate": 40,
+                    "IsRelated": false
+                }
+            ],
+            "Packages": [],
+            "Freestandings": [],
+            "TotalTakeRate": 20
+        },
+        {
+            "MFAL": "DR--E",
+            "Series": [
+                {
+                    "Name": "Clase 1",
+                    "TakeRate": 10,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Clase 2",
+                    "TakeRate": 10,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Clase 3",
+                    "TakeRate": 10,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Clase 4",
+                    "TakeRate": 30,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Clase 5",
+                    "TakeRate": 40,
+                    "IsRelated": false
+                }
+            ],
+            "Packages": [],
+            "Freestandings": [],
+            "TotalTakeRate": 40
+        },
+        {
+            "MFAL": "DR--F",
+            "Series": [
+                {
+                    "Name": "Clase 1",
+                    "TakeRate": 10,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Clase 2",
+                    "TakeRate": 10,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Clase 3",
+                    "TakeRate": 10,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Clase 4",
+                    "TakeRate": 30,
+                    "IsRelated": false
+                },
+                {
+                    "Name": "Clase 5",
+                    "TakeRate": 40,
+                    "IsRelated": true
+                }
+            ],
+            "Packages": [],
+            "Freestandings": [],
+            "TotalTakeRate": 40
+        },
+        {
+            "MFAL": "JEAAC",
+            "Series": [
+                {
+                    "Name": "Clase 1",
+                    "TakeRate": 10,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Clase 2",
+                    "TakeRate": 10,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Clase 3",
+                    "TakeRate": 10,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Clase 4",
+                    "TakeRate": 30,
+                    "IsRelated": true
+                },
+                {
+                    "Name": "Clase 5",
+                    "TakeRate": 40,
+                    "IsRelated": true
+                }
+            ],
+            "Packages": [],
+            "Freestandings": [],
+            "TotalTakeRate": 100
+        }
+    ]
+}
